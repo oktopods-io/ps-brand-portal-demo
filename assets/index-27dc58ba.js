@@ -105,9 +105,8 @@ Error generating stack: `+o.message+`
         width: 75%;
     }
     img {
-        object-fit: contain;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        height: auto;
     }
 `;Qa.registerPlugin(K);function Ly({children:t}){return et.useLayoutEffect(()=>{K.refresh();const e=Qa.context(()=>{const n=document.querySelector(".scroll_content"),r=()=>-(n.offsetWidth-window.innerWidth);Qa.to(n,{x:r,duration:3,ease:"none",scrollTrigger:{trigger:".scroll_container",pin:!0,scrub:1,start:"top top",end:()=>`+=${r()*-1}`,invalidateOnRefresh:!0}})});return()=>e.revert()},[]),M.jsx(BC,{className:"scroll_container",children:M.jsx(UC,{className:"scroll_content",children:t})})}Ly.propTypes={children:ri.oneOfType([ri.arrayOf(ri.node),ri.node]).isRequired};const BC=Q.div`
     min-height: 100vh;
