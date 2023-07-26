@@ -109,7 +109,7 @@ Error generating stack: `+o.message+`
         margin-left: auto;
         margin-right: auto;
     }
-`;function Ly({children:t}){return et.useLayoutEffect(()=>{Q.refresh();const e=Qu.context(()=>{const n=document.querySelector(".scroll_content"),r=()=>-(n.offsetWidth-window.innerWidth);Qu.to(n,{x:r,duration:3,ease:"none",scrollTrigger:{trigger:".scroll_container",pin:!0,scrub:1,start:"top top",end:()=>`+=${r()*-1}`,invalidateOnRefresh:!0}})});return()=>e.revert()},[]),M.jsx(BC,{className:"scroll_container",children:M.jsx(UC,{className:"scroll_content",children:t})})}Ly.propTypes={children:ri.oneOfType([ri.arrayOf(ri.node),ri.node]).isRequired};const BC=Y.div`
+`;Qu.registerPlugin(Q);function Ly({children:t}){return et.useLayoutEffect(()=>{Q.refresh();const e=Qu.context(()=>{const n=document.querySelector(".scroll_content"),r=()=>-(n.offsetWidth-window.innerWidth);Qu.to(n,{x:r,duration:3,ease:"none",scrollTrigger:{trigger:".scroll_container",pin:!0,scrub:1,start:"top top",end:()=>`+=${r()*-1}`,invalidateOnRefresh:!0}})});return()=>e.revert()},[]),M.jsx(BC,{className:"scroll_container",children:M.jsx(UC,{className:"scroll_content",children:t})})}Ly.propTypes={children:ri.oneOfType([ri.arrayOf(ri.node),ri.node]).isRequired};const BC=Y.div`
     min-height: 100vh;
     overflow-x: hidden;
 `,UC=Y.div`
@@ -187,7 +187,6 @@ Error generating stack: `+o.message+`
     z-index: 2;
 `,Rs=Y.div`
     margin: 1rem 1.25rem;
-    font-family: 'ARRrrrial-bold', sans-serif;
     font-weight: 700;
     line-height: 2rem;
     font-size: 1.5rem;
@@ -207,7 +206,7 @@ Error generating stack: `+o.message+`
     background-size: 178% 100%;
     background-position-y: center;
     background-position-x: 40%;
-    transition: background-size 0.6s ease-out;
+    transition: background-size 0.6s ease-in-out;
     cursor: pointer;
 
     &:hover {
@@ -220,11 +219,11 @@ Error generating stack: `+o.message+`
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-size 0.6s ease-out;
+    transition: background-size 0.6s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-size: 103% 103%;
+        background-size: 105% 105%;
     }
 `,s3="/ps-brand-portal-demo/assets/wide_mask-b7c5c36b.svg",l3="/ps-brand-portal-demo/assets/wide_border-619dcb54.svg";function a3(){return M.jsxs(f3,{maskSVG:s3,children:[M.jsx(u3,{}),M.jsx(d3,{children:M.jsxs(p3,{borderSVG:l3,children:[M.jsxs(ca,{children:[M.jsx(Rs,{children:"Design Principles"}),M.jsx(fa,{})]}),M.jsxs(Mc,{children:["Logo, ARRrrrial Typeface, Colors,",M.jsx("br",{}),"Put a Grid On It, Motion Rules"]})]})})]})}function u3(){return M.jsxs(c3,{width:"597",height:"597",viewBox:"0 0 597 597",fill:"none",xmlns:"http://www.w3.org/2000/svg",id:"design-principles-logo",children:[M.jsx("path",{d:"M297.562 328.199C343.378 328.199 380.519 291.048 380.519 245.219C380.519 199.39 343.378 162.238 297.562 162.238C251.746 162.238 214.604 199.39 214.604 245.219C214.604 291.048 251.746 328.199 297.562 328.199Z",fill:"white"}),M.jsx("path",{d:"M433.106 346.67C431.64 331.268 425.879 317.123 417.081 305.459L297.602 351.943L178.088 305.459C169.29 317.123 163.529 331.268 162.062 346.67L236.606 375.657L185.874 395.389C192.683 408.87 200.888 421.548 210.315 433.317L297.602 399.371L384.889 433.317C394.316 421.548 402.486 408.87 409.329 395.389L358.598 375.657L433.141 346.67H433.106Z",fill:"white"}),M.jsx("circle",{cx:"297.466",cy:"298.002",r:"136.005",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{cx:"242.56",cy:"353.442",r:"80.5635",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{cx:"352.376",cy:"353.442",r:"80.5635",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{cx:"297.466",cy:"381.696",r:"52.3095",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{className:"rotating-circle",cx:"298.53",cy:"217.503",r:"216.503",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{className:"rotating-circle",cx:"297.468",cy:"378.499",r:"216.503",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{className:"rotating-circle",cx:"217.503",cy:"298.003",r:"216.503",stroke:"#00A3DA",strokeWidth:"2"}),M.jsx("circle",{className:"rotating-circle",cx:"378.499",cy:"298.003",r:"216.503",stroke:"#00A3DA",strokeWidth:"2"})]})}const c3=Y.svg`
     position: absolute;
@@ -232,7 +231,7 @@ Error generating stack: `+o.message+`
     top: -33%;
     height: 166%;
     width: auto;
-    transition: all 0.6s ease-out;
+    transition: all 1s ease-in-out;
     z-index: 1;
 `,f3=Y(la)`
     display: flex;
@@ -243,7 +242,7 @@ Error generating stack: `+o.message+`
     .rotating-circle {
         transform: rotate(0deg);
         transform-origin: 50% 50%;
-        transition: transform 0.6s ease-out;
+        transition: transform 1s ease-in-out;
     }
 
     &:hover {
@@ -277,7 +276,7 @@ Error generating stack: `+o.message+`
         left: 0;
         background: linear-gradient(245deg, #3cfeaa 0%, #04caca 100%) no-repeat;
         z-index: -1;
-        transition: opacity 0.6s ease-out;
+        transition: opacity 1.2s ease-in-out;
         opacity: 0;
     }
 
@@ -308,51 +307,51 @@ Error generating stack: `+o.message+`
     height: 100%;
     background-image: url(${S3});
     background-repeat: no-repeat;
-    background-position: -820% 5%;
+    background-position: -850% 5%;
     background-size: 105%;
-    transition: background-position 0.6s ease-out;
+    transition: background-position 1s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-position: -780% 7%;
+        background-position: -810% 8%;
     }
 `,O3=Y.div`
     width: 100%;
     height: 100%;
-    background: url(${k3}) no-repeat 470% 75%;
-    background-size: 110%;
+    background: url(${k3}) no-repeat 340% 73%;
+    background-size: 115%;
     opacity: 1;
     position: relative;
-    transition: background-position 0.6s ease-out;
+    transition: background-position 1s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-position: 430% 73%;
+        background-position: 300% 70%;
     }
 `,R3=Y.div`
     width: 100%;
     height: 100%;
     background-image: url(${w3});
     background-repeat: no-repeat;
-    background-position: 600% 111%;
+    background-position: 610% 111%;
     background-size: 95%;
-    transition: background-position 0.6s ease-out;
+    transition: background-position 1s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-position: 560% 109%;
+        background-position: 580% 109%;
     }
-`,M3=Q2({typography:{fontFamily:["ARRrrrial","ARRrrrial-bold","ARRrrrial-medium","ARRrrrial-light","sans-serif"].join(",")}});Qu.registerPlugin(Q);function A3(){return M.jsxs(Z2,{theme:M3,children:[M.jsx(zC,{}),M.jsx(FC,{}),M.jsxs(Ly,{children:[M.jsx(WC,{}),M.jsx(z3,{children:M.jsxs(D3,{className:"slide_in_first",children:[M.jsx(JC,{}),M.jsxs(N3,{children:[M.jsxs(Pm,{className:"slide_in",children:[M.jsx(i3,{}),M.jsx(a3,{})]}),M.jsx(Pm,{className:"slide_in",children:M.jsx(g3,{})})]}),M.jsx(C3,{className:"slide_in"})]})})]})]})}const z3=Y.div`
+`;function M3(){return M.jsx(A3,{children:M.jsxs(z3,{className:"slide_in_first",children:[M.jsx(JC,{}),M.jsxs(D3,{children:[M.jsxs(Pm,{className:"slide_in",children:[M.jsx(i3,{}),M.jsx(a3,{})]}),M.jsx(Pm,{className:"slide_in",children:M.jsx(g3,{})})]}),M.jsx(C3,{className:"slide_in"})]})})}const A3=Y.div`
     height: 100vh;
     width: fit-content;
-`,D3=Y.div`
+`,z3=Y.div`
     display: flex;
     gap: calc(24 / (762 + 24 + 1155 + 24 + 369) * 100%);
     height: 75vh;
     margin-top: 20vh;
     margin-left: 10vw;
     margin-right: 10vw;
-`,N3=Y.div`
+`,D3=Y.div`
     display: flex;
     flex-direction: column;
     gap: calc(24 / 762 * 100%);
@@ -365,4 +364,4 @@ Error generating stack: `+o.message+`
     flex-direction: row;
     justify-content: space-between;
     height: calc(50% - (12 / 1155 * 100%));
-`;Sf.createRoot(document.getElementById("root")).render(M.jsx(Im.StrictMode,{children:M.jsx(A3,{})}));
+`,N3=Q2({typography:{fontFamily:["ARRrrrial","ARRrrrial-bold","ARRrrrial-medium","ARRrrrial-light","sans-serif"].join(",")}});function L3(){return M.jsxs(Z2,{theme:N3,children:[M.jsx(zC,{}),M.jsx(FC,{}),M.jsxs(Ly,{children:[M.jsx(WC,{}),M.jsx(M3,{})]})]})}Sf.createRoot(document.getElementById("root")).render(M.jsx(Im.StrictMode,{children:M.jsx(L3,{})}));
