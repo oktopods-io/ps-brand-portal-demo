@@ -289,7 +289,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-`,_3="/ps-brand-portal-demo/assets/long_mask-34cef50b.svg",y3="/ps-brand-portal-demo/assets/long_border-a11e76ca.svg",v3="/ps-brand-portal-demo/assets/purdy_pictures_background_labels-42087877.svg",x3="/ps-brand-portal-demo/assets/purdy_pictures_background_palm-99d86da5.svg",w3="/ps-brand-portal-demo/assets/purdy_pictures_background_packaging-6ef8a590.svg";function k3(){return M.jsx(S3,{maskSVG:_3,children:M.jsx(by,{children:M.jsx(uu,{children:M.jsx(au,{borderSVG:y3,children:M.jsxs(C3,{children:[M.jsxs(cu,{children:[M.jsx(Rs,{children:"Purdy Pictures"}),M.jsx(fu,{})]}),M.jsxs(Mc,{children:["A picture is a worth a thousand",M.jsx("br",{}),"parlays"]})]})})})})})}const S3=Q(lu)`
+`,_3="/ps-brand-portal-demo/assets/long_mask-34cef50b.svg",y3="/ps-brand-portal-demo/assets/long_border-a11e76ca.svg",v3="/ps-brand-portal-demo/assets/purdy_pictures_background_labels-42087877.svg",x3="/ps-brand-portal-demo/assets/purdy_pictures_background_palm-99d86da5.svg",w3="/ps-brand-portal-demo/assets/purdy_pictures_background_packaging-6ef8a590.svg";function k3(){return M.jsx(S3,{maskSVG:_3,children:M.jsx(by,{children:M.jsx(uu,{children:M.jsx(au,{borderSVG:y3,children:M.jsxs(C3,{children:[M.jsxs(cu,{children:[M.jsx(Rs,{children:"Purdy Pictures"}),M.jsx(fu,{})]}),M.jsxs(Mc,{children:["A picture is a worth",M.jsx("br",{}),"a thousand parlays"]})]})})})})})}const S3=Q(lu)`
     flex-shrink: 0;
     height: 100%;
     aspect-ratio: 369 / 762;
