@@ -203,16 +203,29 @@ Error generating stack: `+o.message+`
     aspect-ratio: 1;
     background-image: url(${QC});
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 178% 100%;
+    background-position-y: center;
     background-position-x: 40%;
+    transition: background-size 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-size: 183% 103%;
+    }
 `,tT="/ps-brand-portal-demo/assets/small_mask-21c73b26.svg",nT="/ps-brand-portal-demo/assets/small_border-dc4a5936.svg",rT="/ps-brand-portal-demo/assets/motion_principles_background_pirate-d9bd4fc9.gif";function iT(){return z.jsx(oT,{maskSVG:tT,children:z.jsx(uu,{children:z.jsx(au,{borderSVG:nT,children:z.jsxs(cu,{children:[z.jsx(Rs,{children:"Motion Principles"}),z.jsx(fu,{})]})})})})}const oT=Z(lu)`
     flex: 1;
     aspect-ratio: 1;
     background-color: rgba(20, 20, 20, 1);
     background-image: url(${rT});
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-size 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-size: 103% 103%;
+    }
 `,sT="/ps-brand-portal-demo/assets/wide_mask-b7c5c36b.svg",lT="/ps-brand-portal-demo/assets/wide_border-619dcb54.svg",uT="/ps-brand-portal-demo/assets/design_principles_background_logo-8dfb27d2.svg";function aT(){return z.jsx(cT,{maskSVG:sT,children:z.jsx(uu,{children:z.jsxs(au,{borderSVG:lT,children:[z.jsxs(cu,{children:[z.jsx(Rs,{children:"Design Principles"}),z.jsx(fu,{})]}),z.jsxs(Mc,{children:["Logo, ARRrrrial Typeface, Colors,",z.jsx("br",{}),"Put a Grid On It, Motion Rules"]})]})})})}const cT=Z(lu)`
     flex: 1;
     display: flex;
@@ -222,17 +235,42 @@ Error generating stack: `+o.message+`
     background-repeat: no-repeat;
     background-position: 600% center;
     background-size: 93%;
+    transition: background-position 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-position: 470% 55%;
+    }
 `,fT="/ps-brand-portal-demo/assets/extrawide_mask-d9d06ab7.svg",dT="/ps-brand-portal-demo/assets/extrawide_border-d4508f38.svg";function pT(){return z.jsx(hT,{maskSVG:fT,children:z.jsx(uu,{children:z.jsx(au,{borderSVG:dT,children:z.jsxs(mT,{children:[z.jsxs(cu,{children:[z.jsx(Rs,{children:"BrandARRrrrsenal"}),z.jsx(fu,{})]}),z.jsxs(Mc,{children:["ARRrrrmojis, Deck Layouts, Moving ",z.jsx("br",{}),"table tops, Static table tops and more"]})]})})})})}const hT=Z(lu)`
     flex: 1;
     aspect-ratio: 1155 / 369;
-    background: linear-gradient(110.09deg, #3cfeaa 2.2%, #04caca 63.39%)
-        no-repeat;
+    background: linear-gradient(151deg, #3cfeaa 0%, #04caca 100%) no-repeat;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(245deg, #3cfeaa 0%, #04caca 100%) no-repeat;
+        z-index: -1;
+        transition: opacity 0.6s ease-out;
+        opacity: 0;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
 `,mT=Z.div`
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 `,gT="/ps-brand-portal-demo/assets/long_mask-34cef50b.svg",_T="/ps-brand-portal-demo/assets/long_border-a11e76ca.svg",yT="/ps-brand-portal-demo/assets/purdy_pictures_background_labels-42087877.svg",vT="/ps-brand-portal-demo/assets/purdy_pictures_background_palm-99d86da5.svg",xT="/ps-brand-portal-demo/assets/purdy_pictures_background_packaging-6ef8a590.svg";function wT(){return z.jsx(kT,{maskSVG:gT,children:z.jsx(by,{children:z.jsx(uu,{children:z.jsx(au,{borderSVG:_T,children:z.jsxs(ST,{children:[z.jsxs(cu,{children:[z.jsx(Rs,{children:"Purdy Pictures"}),z.jsx(fu,{})]}),z.jsxs(Mc,{children:["A picture is a worth a thousand",z.jsx("br",{}),"parlays"]})]})})})})})}const kT=Z(lu)`
     flex-shrink: 0;
     height: 100%;
@@ -252,6 +290,12 @@ Error generating stack: `+o.message+`
     background-repeat: no-repeat;
     background-position: -820% 5%;
     background-size: 105%;
+    transition: background-position 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-position: -780% 7%;
+    }
 `,TT=Z.div`
     width: 100%;
     height: 100%;
@@ -259,6 +303,12 @@ Error generating stack: `+o.message+`
     background-size: 110%;
     opacity: 1;
     position: relative;
+    transition: background-position 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-position: 430% 73%;
+    }
 `,PT=Z.div`
     width: 100%;
     height: 100%;
@@ -266,6 +316,12 @@ Error generating stack: `+o.message+`
     background-repeat: no-repeat;
     background-position: 600% 111%;
     background-size: 95%;
+    transition: background-position 0.6s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background-position: 560% 109%;
+    }
 `,ET=QS({typography:{fontFamily:["ARRrrrial","ARRrrrial-bold","ARRrrrial-medium","ARRrrrial-light","sans-serif"].join(",")}});Qa.registerPlugin(K);function OT(){return z.jsxs(ZS,{theme:ET,children:[z.jsx(AC,{}),z.jsx(FC,{}),z.jsxs(Ly,{children:[z.jsx(WC,{}),z.jsx(RT,{children:z.jsxs(MT,{className:"slide_in_first",children:[z.jsx(JC,{}),z.jsxs(zT,{children:[z.jsxs(Pm,{className:"slide_in",children:[z.jsx(iT,{}),z.jsx(aT,{})]}),z.jsx(Pm,{className:"slide_in",children:z.jsx(pT,{})})]}),z.jsx(wT,{className:"slide_in"})]})})]})]})}const RT=Z.div`
     height: 100vh;
     width: fit-content;
