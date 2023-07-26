@@ -116,7 +116,8 @@ Error generating stack: `+o.message+`
     width: fit-content;
     display: flex;
 `;function WC(){return M.jsx(VC,{children:M.jsxs(HC,{children:[M.jsx(YC,{children:"This be y’er treasure map"}),M.jsx(XC,{children:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."})]})})}const VC=Y.div`
-    height: 100vh;
+    height: 75vh;
+    margin-top: 20vh;
     width: 100vw;
     flex-shrink: 0;
     display: flex;
@@ -124,8 +125,6 @@ Error generating stack: `+o.message+`
     align-items: center;
 `,HC=Y.div`
     width: 50%;
-    display: flex;
-    flex-direction: column;
     @media (max-width: 992px) {
         width: 70%;
     }
@@ -348,9 +347,9 @@ Error generating stack: `+o.message+`
     width: fit-content;
 `,D3=Y.div`
     display: flex;
-    gap: 24px;
-    height: 80vh;
-    margin-top: 15vh;
+    gap: calc(24 / (762 + 24 + 1155 + 24 + 369) * 100%);
+    height: 75vh;
+    margin-top: 20vh;
     margin-left: 10vw;
     margin-right: 10vw;
 `,N3=Y.div`
