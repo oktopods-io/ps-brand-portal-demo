@@ -166,7 +166,7 @@ Error generating stack: `+o.message+`
     h4 {
         /* Regular/Heading/Heading 4 */
         font-size: 1.6rem;
-        font-family: ' ARRrrrial';
+        font-family: 'ARRrrrial';
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
