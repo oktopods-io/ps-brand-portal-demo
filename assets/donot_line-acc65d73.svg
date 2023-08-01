@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 497.9 293.82">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #d6132b;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="c" >
+    <line class="d" x1="1.01" y1="292.09" x2="496.89" y2="1.73"/>
+  </g>
+</svg>
