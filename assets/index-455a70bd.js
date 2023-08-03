@@ -103,6 +103,7 @@ Error generating stack: `+o.message+`
     left: 0;
     width: 100vw;
     height: 10rem;
+    z-index: 5;
 `,wC=T.div`
     display: flex;
     justify-content: space-between;
